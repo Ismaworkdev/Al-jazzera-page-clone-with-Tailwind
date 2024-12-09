@@ -1,0 +1,5 @@
+repositorio : https://github.com/Ismaworkdev/Al-jazzera-page-clone-with-Tailwind/tree/main
+
+pagina copiada : https://www.aljazeera.com/
+
+paginas : index , live y Sing up 
