@@ -1,17 +1,307 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./output.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+    <title>Header con Tailwind CSS</title>
 </head>
-<body>
-    <header class="header">
-        <div>
-            <div>
-                <img src="./img/logo.png" alt="">
-            </div>
+<body class="bg-white">
+    <header class=" bg-white text-black block p-4 z-10 fixed top-0 w-full shadow-xl h-[80px]">
+   
+        
+        <div class="container mx-auto flex justify-between w-[1200px]">
+           <a href="./index.html">
+            <img src="./img/aljazzera.png" alt="">
+           </a>
+            <nav class="mt-2 hidden lg:block">
+                <ul class="flex space-x-4">
+                    <li><a href="#" class="hover:underline">News</a></li>
+                    <li><a href="#" class="hover:underline">War on Gaza</a></li>
+                    <li><a href="#" class="hover:underline">Trump 2.0</a></li>
+                    <li><a href="#" class="hover:underline">Opinion</a></li>
+                    <li><a href="#" class="hover:underline">Sport</a></li>
+                    <li><a href="#" class="hover:underline">Video</a></li>
+                    <li><a href="#" class="hover:underline">More </a></li>
+                </ul>
+            </nav>
+
+
+
+            <nav class="mt-2">
+                <ul class="flex space-x-4">
+                   
+
+                    <li><a href="./live.html" class="hover:underline"> <i class="fa-solid fa-circle-play"></i> LIVE</a></li>
+                    <li><a id="buscar" class="hover:text-orange-500">   <i class="fas fa-search"></i> </a></li>
+                    <li><a href="./singing.html" class=" rounded-[60px] p-3 text-white bg-black">Sign in </a></li>
+                </ul>
+            </nav>
+
+
+
+
+  
+        <div id="seach" class=" w-[100%] flex items-center p-2 max-w mx-auto bg-gray-300 fixed top-[80px] left-0 justify-center">
+            <form class="flex w-full max-w-[1000px] items-center border  overflow-hidden justify-center">
+                <i class="fas fa-search p-2 bg-transparent"></i> 
+                <input  type="text" class="flex-grow p-2 border-none focus:outline-none bg-transparent" placeholder="Search...">
+                <button type="submit" class="bg-gray-500 text-white p-2  rounded-[0px]">Search </button>
+            </form>
         </div>
+    
+
+
+
     </header>
+
+   
+    
+    <main class=" relative  top-[90px] mb-[70px] container mx-auto flex justify-between w-[1200px]">
+        <div class="block  w-[1200px] lg:block">
+        <div class="block w-full lg:flex ">
+    <div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/gCNeDWCI0vo?si=Sc78XULpfjBpxiFu&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+        <h2 class="text-2xl font-bold text-gray-800 my-4  hover:underline">
+            Syria’s new administration moves quickly to form government
+        </h2>
+        
+        <p class="text-red-600 font-bold"><i class="fa-solid fa-circle"></i> LIVE UPDATES</p>
+        <div class="flex">
+           
+            <ul class="pr-2">
+                <li class="pb-1 flex"><i class=" text-xs	 fa-solid fa-circle text-yellow-400 pr-2 pt-2"></i> <p class="text-gray-500 pr-2">3m ago:</p><p class="text-black  hover:underline">    White Helmets offers reward for intelligence on secret prisons    </p></li>
+                <li class="pb-1 flex " ><i class=" text-xs	 fa-solid fa-circle text-yellow-400 pr-2 pt-2"></i><p class="text-gray-500 pr-2">13m ago:</p> <p class="text-black  hover:underline">    How does Europe view Syria after the fall of al-Assad?   </p></li>
+                <li class="pb-1 flex " ><i class=" text-xs	 fa-solid fa-circle text-yellow-400  pr-2 pt-2"></i><p class="text-gray-500 pr-2">23m ago:</p><p class="text-black  hover:underline ">    Hafez al-Assad statue toppled in Deir Atiyah    </p></li>
+                <li class="pb-1 flex " ><i class=" text-xs	 fa-solid fa-circle text-yellow-400 pr-2 pt-2"></i><p class="text-gray-500 pr-2 ">33m ago:</p><p class="text-black  hover:underline">     WATCH: Syrians say they are looking to the future after removal of al-Assad    </p></li>
+                <li class="pb-1 flex"><i class=" text-xs	 fa-solid fa-circle text-yellow-400 pr-2 pt-2"></i><p class="text-gray-500 pr-2 ">37m ago:</p><p class="text-black  hover:underline">    New administration expected to select head of transitional government    </p></li>
+                <li class="pb-1 flex"><i class=" text-xs	 fa-solid fa-circle text-yellow-400 pr-2 pt-2"></i> <p class="text-gray-500 pr-2 ">43m ago:</p> <p class="text-black     hover:underline">  Central Bank of Syria says deposits are safe    </p></li>
+            
+            
+            </ul>
+        </div>
+    
+    
+    </div>
+    <div class="  pl-3 pr-3 ">
+        <div class=" block w-[255px]">
+            <img class="rounded-xl w-full" src="./img/gaza.png" alt="">
+            <p class="text-black  text-[22px] hover:underline">   Israeli strikes on Gaza flour distribution line, residential area kill 22    </p>
+        </div>
+
+        <div class=" flex w-[300px] h-[100px]  border-t-2 border-gray-400  pt-3 pb-3 mb-5 ">
+            <p class="text-black w-[200px] text-[15px] hover:underline"> Syrians who fled home rejoice at Assad’s ouster, although some are cautious </p>
+            <img class="rounded-xl   h-[100px]  "  src="./img/syria.png" alt="">
+           
+        </div>
+        
+        <div class=" flex w-[300px] h-[100px] border-t-2 border-gray-400 pt-3 pb-3 mb-5">
+            <p class="text-black w-[200px] text-[15px] hover:underline"> Can Donald Trump end birthright citizenship in the US?</p>
+            <img class="rounded-xl   h-[100px]  "  src="./img/trump.png" alt="">
+           
+        </div>
+      
+        <div class=" flex w-[300px] h-[100px] border-t-2 border-gray-400  pt-3 pb-3 ">
+            <p class="text-black w-full text-[15px] hover:underline"> South Korea imposes travel ban on President Yoon as leadership crisis grows</p>
+            
+           
+        </div>
+      
+
+        <div class=" flex w-[300px] h-[100px] border-t-2 border-gray-400  pt-3 pb-3 ">
+            <p class="text-black w-full text-[15px] hover:underline">Pakistan-administered Kashmir repeals protest restrictions after strike</p>
+            
+           
+        </div>
+       
+
+        <div class=" flex w-[300px] h-[100px] border-t-2 border-gray-400  pt-3 pb-3 ">
+            <p class="text-black w-full text-[15px] hover:underline">Evacuations under way in Philippines as Mt Kanlaon volcano erupts</p>
+            
+           
+        </div>
+        
+
+        <div class=" flex w-[300px] h-[100px] border-t-2 border-gray-400  pt-3 pb-3 ">
+            <p class="text-black w-full text-[15px] hover:underline">Benjamin Netanyahu’s corruption trial, what you need to know</p>
+            
+           
+        </div>
+    </div>
+    <div class="pl-3  border-l-2 border-gray-400">
+        <div >
+<p class="text-gray-400 w-[200px] text-[15px]  border-l-4 border-orange-300  pl-1 mb-2">SYRIA'S AL-ASSAD OUSTED</p>
+<div class=" flex w-[300px] h-[100px]  border-t-2 border-gray-400  pt-3 pb-3 mb-5 ">
+    <p class="text-black w-[200px] text-[15px] hover:underline"> Russia gave asylum to deposed Syrian President al-Assad, Kremlin confirms </p>
+    <img class="rounded-xl   h-[100px]  "  src="./img/russia.png" alt="">
+   
+</div>
+<div class=" flex w-[300px] h-[100px] border-t-2 border-gray-400  pt-3 pb-3 ">
+    <p class="text-black w-full text-[15px] hover:underline">US announces air strikes on ISIL targets in Syria after al-Assad’s fall    </p>
+</div>
+<div class=" flex w-[300px] h-[100px] border-t-2 border-gray-400  pt-3 pb-3 ">
+    <p class="text-black w-full text-[15px] hover:underline">Taking Syria: The opposition’s battles shown in 11 maps for 11 days    </p>
+</div>
+
+<p class="text-gray-400 w-[200px] text-[15px]  border-l-4 border-orange-300  pl-1 mb-1">More Headlines</p>
+<div class=" flex w-[300px] h-[100px]  border-t-2 border-gray-400  pt-3 pb-3 mb-5 ">
+    <p class="text-black w-[200px] text-[15px] hover:underline"> Haiti gang killed 184 people over witchcraft accusation, UN says </p>
+    <img class="rounded-xl   h-[100px]  "  src="./img/haiti.png" alt="">
+   
+</div>
+<div class=" flex w-[300px] h-[100px] border-t-2 border-gray-400  pt-3 pb-3 ">
+    <p class="text-black w-full text-[15px] hover:underline">Fact-check: Donald Trump’s latest claims on tariffs, murders and more    </p>
+</div>
+<div class=" flex w-[300px] h-[100px] border-t-2 border-gray-400  pt-3 pb-3 ">
+    <p class="text-black w-full text-[15px] hover:underline">Did toxic algae kill hundreds of elephants in Botswana?    </p>
+</div>
+<p class="text-gray-400 w-[200px] text-[15px]  border-l-4 border-orange-300  pl-1"> OPINION</p>
+
+<div class=" flex w-[300px] h-[100px]    pt-3 pb-3 mb-5 ">
+    <img class="rounded-[60px]   h-[100px]  "  src="./img/woman-jornalist.png" alt="">
+
+<div>
+    <p class="text-black w-[200px] text-[15px] hover:underline mb-3"> No surprise Americans are ‘rooting for’ the UnitedHealthcare CEO’s killer    </p>
+    <p class="text-gray-400 w-[200px] text-[11px] hover:underline"> Belén Fernández    </p>
+   
+</div>
+</div>
+<div class=" flex w-[300px] h-[100px]    pt-3 pb-3 mb-5 ">
+    <img class="rounded-[60px]   h-[100px]  "  src="./img/man-jornalist.png" alt="">
+
+<div>
+    <p class="text-black w-[200px] text-[15px] hover:underline mb-3"> What the collapse of the Syrian regime says about the Arab region    </p>
+    <p class="text-gray-400 w-[200px] text-[11px] hover:underline"> Rami G Khouri  </p>
+   
+</div>
+</div>
+
+        </div>
+       
+    </div>
+
+
+
+
+</div>
+<div class=" w-[1200px] border-t-2 border-gray-500 block">
+    <p class="text-gray-400 w-[200px] text-[15px]  border-l-4 border-orange-300 mt-5 pl-1 mb-2">Watch Latest Videos</p>
+    <div class=" w-full justify-around flex-wrap  lg:flex ">
+        <div class="flex w-full sm:w-[300px] h-[100px] pt-3 pb-3 mb-5">
+            <p class="text-black w-[200px] text-[15px] pl-2 pr-2 hover:underline">What’s next for Syria?</p>
+            <img class="rounded-xl h-[100px]" src="./img/freesyris.png" alt="">
+        </div>
+        <div class="flex w-full sm:w-[300px] h-[100px] pt-3 pb-3 mb-5">
+            <p class="text-black w-[200px] text-[15px] pl-2 pr-2 hover:underline">Al Jazeera’s Zeina Khodr inside a new Damascus</p>
+            <img class="rounded-xl h-[100px]" src="./img/insidedamasco.png" alt="">
+        </div>
+    </div>
+    <div class=" w-full justify-around flex-wrap lg:flex ">
+        <div class="flex w-full sm:w-[300px] h-[100px] pt-3 pb-3 mb-5">
+            <p class="text-black w-[200px] text-[15px] pl-2 pr-2 hover:underline">Roads to Syria’s capital jammed after fall of Assad</p>
+            <img class="rounded-xl h-[100px]" src="./img/roadtodamasco.png" alt="">
+        </div>
+        <div class="flex w-full sm:w-[300px] h-[100px] pt-3 pb-3 mb-5">
+            <p class="text-black w-[200px] text-[15px] pl-2 pr-2 hover:underline">Fall of Assad government ‘is act of justice’, says Biden</p>
+            <img class="rounded-xl h-[100px]" src="./img/biden.png" alt="">
+        </div>
+    </div>
+    
+    </div>
+</div>
+     </main>
+      
+
+
+     <footer class="text-black py-8 p-1 w-[1200px] mx-auto">
+       
+              <div class="container mx-auto px-4">
+            <div class=" justify-around flex gap-2 border-t-2 border-black pt-[30px] ">
+                <div class="w-[150px]">
+                    <h2 class="text-lg font-bold mb-4">About</h2>
+                    <ul>
+                        <li><a href="#" class="hover:underline">About Us</a></li>
+                        <li><a href="#" class="hover:underline">Code of Ethics</a></li>
+                        <li><a href="#" class="hover:underline">Terms and Conditions</a></li>
+                        <li><a href="#" class="hover:underline">EU/EEA Regulatory Notice</a></li>
+                        <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:underline">Cookie Policy</a></li>
+                        <li><a href="#" class="hover:underline">Cookie Preferences</a></li>
+                        <li><a href="#" class="hover:underline">Sitemap</a></li>
+                        <li><a href="#" class="hover:underline">Work for us</a></li>
+                    </ul>
+                </div>
+                <div class="w-[150px]">
+                    <h2 class="text-lg font-bold mb-4">Connect</h2>
+                    <ul>
+                        <li><a href="#" class="hover:underline">Contact Us</a></li>
+                        <li><a href="#" class="hover:underline">User Accounts Help</a></li>
+                        <li><a href="#" class="hover:underline">Advertise with us</a></li>
+                        <li><a href="#" class="hover:underline">Apps</a></li>
+                        <li><a href="#" class="hover:underline">Newsletters</a></li>
+                        <li><a href="#" class="hover:underline">Channel Finder</a></li>
+                        <li><a href="#" class="hover:underline">TV Schedule</a></li>
+                        <li><a href="#" class="hover:underline">Podcasts</a></li>
+                        <li><a href="#" class="hover:underline">Submit a Tip</a></li>
+                    </ul>
+                </div>
+                <div class="w-[150px]">
+                    <h2 class="text-lg font-bold mb-4">Our Channels</h2>
+                    <ul>
+                        <li><a href="#" class="hover:underline">Al Jazeera Arabic</a></li>
+                        <li><a href="#" class="hover:underline">Al Jazeera English</a></li>
+                        <li><a href="#" class="hover:underline">Al Jazeera Investigative Unit</a></li>
+                        <li><a href="#" class="hover:underline">Al Jazeera Mubasher</a></li>
+                        <li><a href="#" class="hover:underline">Al Jazeera Documentary</a></li>
+                        <li><a href="#" class="hover:underline">Al Jazeera Balkans</a></li>
+                        <li><a href="#" class="hover:underline">AJ+</a></li>
+                    </ul>
+                </div>
+                <div class="w-[150px]">
+                    <h2 class="text-lg font-bold mb-4">Our Network</h2>
+                    <ul>
+                      
+                        <li><a href="#" class="hover:underline"> Al Jazeera Centre for Studies</a></li>
+                        <li><a href="#" class="hover:underline">Al Jazeera Media Institute</a></li>
+                        <li><a href="#" class="hover:underline">Learn Arabic</a></li>
+                        <li><a href="#" class="hover:underline">Al Jazeera Centre for Public Liberties & Human Rights  </a></li>
+                        <li><a href="#" class="hover:underline">Al Jazeera Forum</a></li>
+                        <li><a href="#" class="hover:underline">Al Jazeera Hotel Partners</a></li>
+
+                    </ul>
+                </div>
+
+
+
+                <div class="w-[210px]  text-center  flex-col m-0-auto justify-center   ">
+                    <p class="text-sm text-gray-400  p-4">Follow Al Jazeera English:</p>
+                    <ul class="flex justify-between p-4  ">
+                      
+                        <li><a href="https://www.facebook.com/aljazeera" class="mt-3 "> <img src="./img/facebook.png" alt=""></a></li>
+                        <li><a href="https://x.com/ajenglish" class="mt-3"><img src="./img/x.png" alt=""></a></li>
+                        <li><a href="https://www.youtube.com/aljazeeraenglish" class="mt-3"><img src="./img/youtube.png" alt=""></a></li>
+                        <li><a href="https://www.instagram.com/aljazeeraenglish/?hl=en" class="mt-3"><img src="./img/insta.png" alt="">  </a></li>
+                        <li><a href="https://www.aljazeera.com/xml/rss/all.xml" class="mt-3"><img src="./img/wifi.png" alt=""></a></li>
+
+                    </ul>
+                    <div class="w-full flex justify-center">
+            <img class="mt-3" src="./img/footer-jazzera.png" alt="Footer Al Jazeera">
+        </div>
+                    <p class=" p-4  text-sm mt-3">© 2024 Al Jazeera Media Network</p>
+                </div>
+
+            </div>
+           
+        </div>
+    </footer>
+         
+               
+
+
 </body>
+<script type="module" src="./js/index.js"></script>
 </html>

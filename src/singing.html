@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+    <title>Header con Tailwind CSS</title>
+</head>
+<body class="bg-white">
+    <header class=" bg-white text-black block p-4 z-10 fixed top-0 w-full shadow-xl h-[80px]">
+   
+        
+        <div class="container mx-auto flex justify-between w-[1200px]">
+           <a href="./index.html">
+            <img src="./img/aljazzera.png" alt="">
+           </a>
+            <nav class="mt-2 hidden lg:block">
+                <ul class="flex space-x-4">
+                    <li><a href="#" class="hover:underline">News</a></li>
+                    <li><a href="#" class="hover:underline">War on Gaza</a></li>
+                    <li><a href="#" class="hover:underline">Trump 2.0</a></li>
+                    <li><a href="#" class="hover:underline">Opinion</a></li>
+                    <li><a href="#" class="hover:underline">Sport</a></li>
+                    <li><a href="#" class="hover:underline">Video</a></li>
+                    <li><a href="#" class="hover:underline">More </a></li>
+                </ul>
+            </nav>
+
+
+
+            <nav class="mt-2">
+                <ul class="flex space-x-4">
+                   
+
+                    <li><a href="./live.html" class="hover:underline"> <i class="fa-solid fa-circle-play"></i> LIVE</a></li>
+                    <li><a id="buscar" class="hover:text-orange-500">   <i class="fas fa-search"></i> </a></li>
+                    <li><a href="./singing.html" class=" rounded-[60px] p-3 text-white bg-black">Sign in </a></li>
+                </ul>
+            </nav>
+
+
+
+
+  
+        <div id="seach" class=" w-[100%] flex items-center p-2 max-w mx-auto bg-gray-300 fixed top-[80px] left-0 justify-center">
+            <form class="flex w-full max-w-[1000px] items-center border  overflow-hidden justify-center">
+                <i class="fas fa-search p-2 bg-transparent"></i> 
+                <input  type="text" class="flex-grow p-2 border-none focus:outline-none bg-transparent" placeholder="Search...">
+                <button type="submit" class="bg-gray-500 text-white p-2  rounded-[0px]">Search </button>
+            </form>
+        </div>
+    
+
+
+
+    </header>
+
+   
+    
+    <main class=" relative  top-[90px] mb-[70px] container mx-auto flex justify-between w-[1200px]">
+    
+<div  class="flex w-full justify-between">
+<div class="block w-full">
+    <h1 class="text-2xl font-bold bg-white">Enrich your Al Jazeera experience by creating an account.</h1>
+
+   <ul class="w-[300px] max-w-lg mx-auto">
+    <li class=" mt-2 pl-2 pr-2 justify-center rounded-[60px]  text-black bg-white border border-gray-500 flex items-center ">
+        <i class="fa-brands fa-google pr-1"></i>
+        <a href="./singing.html" class="">Continue with Google</a>
+      </li>
+      <li class="mt-2 pl-2 pr-2 justify-center rounded-[60px]  text-black bg-white border border-gray-500 flex items-center ">
+        <i class="fa-brands fa-facebook pr-1"></i>
+        <a href="./singing.html" class="">Continue with Facebook</a>
+      </li>
+      <li class=" mt-2 pl-2 pr-2 justify-center rounded-[60px]  text-black bg-white border border-gray-500 flex items-center ">
+        <i class="fa-brands fa-apple pr-1"></i>
+        <a href="./singing.html" class="">Continue with Apple</a>
+      </li>
+      
+</ul>
+
+
+
+<form id="singinform" class="max-w-lg mx-auto p-6 bg-white ">
+   
+    <label for="email" class="block text-sm font-medium text-gray-700">E-mail</label>
+    <input type="text" id="email" name="email" class="mt-1 mb-4 p-2 w-full border border-gray-300 rounded-md"  placeholder="E-mail">
+    
+
+    <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+    <input type="text" id="password" name="password" class="mt-1 mb-4 p-2 w-full border border-gray-300 rounded-md"  placeholder="Password">
+    
+    <p class="text-xs text-gray-500 mb-4">Password must contain 8+ characters.</p>
+    
+    <div class="flex items-start mb-4">
+      <input id="terms" name="terms" type="checkbox" class="h-4 w-4 text-gray-600 border-gray-300 rounded" >
+      <label for="terms" class="ml-2 block text-sm text-gray-900">
+        You agree to the <a href="#" class="text-gray-600 underline">Terms and Conditions</a> & <a href="#" class="text-gray-600 underline">Privacy Policy</a>. Your activity will be used to personalise your experience with Al Jazeera products and ads.
+      </label>
+    </div>
+    
+    <div class="flex items-start mb-6">
+      <input id="updates" id="updates" name="updates" type="checkbox" class="h-4 w-4 text-gray-600 border-gray-300 rounded">
+      <label for="updates" class="ml-2 block text-sm text-gray-900">
+        You agree to receive updates from Al Jazeera over email. You can opt out at any time.
+      </label>
+    </div>
+    <span id="error" class="text-red-500 text-[20px] font-bold pl-2"></span>
+    <button type="submit" class="w-full bg-gray-600 text-white py-2 px-4 rounded-[30px] hover:bg-gray-700">Sign Up</button>
+    
+    <p class="mt-4 text-sm text-gray-600">Already have an account? <a href="#" class="text-gray-600 underline">Sign in</a></p>
+  </form>
+  
+
+
+</div>
+
+<div class="block">
+    <h1 class="text-4xl text-black bg-white">Connect and engage with Al Jazeera  </h1>
+    <p>This is not a paywall. It’s free to join.   </p>
+<ul class="pt-3">
+    <li class="flex pt-8">
+        <i class="fa-regular fa-star text-orange-300 text-[30px]"></i>
+        <div class="pl-6"> 
+            <p class="text-xl font-bold">One Al Jazeera account</p>
+            <p>Unlock access to all Al Jazeera services, from our regional news websites and mobile app to documentaries and the Al Jazeera OTT platform, using just one account.</p>
+        </div>
+    </li>
+    <li class="flex pt-8">
+        <i class="fa-solid fa-user-plus text-orange-300 text-[30px]"></i>
+        <div class="pl-6"> 
+            <p class="text-xl font-bold">Personalized “For You”  Section</p>
+            <p>Immerse yourself in a carefully customised selection of articles and videos aligned with your preferences.</p>
+        </div>
+    </li>
+    <li class="flex  pt-8">
+        <i class="fa-regular fa-bookmark text-orange-300 text-[30px] "></i>
+        <div class="pl-9 "> 
+            <p class="text-xl font-bold">Reading list</p>
+            <p>Curate a personal library of articles and reports that you can return to.</p>
+        </div>
+    </li>
+    <li class="flex pt-8">
+        <i class="fa-solid fa-user-plus text-orange-300 text-[30px]"></i>
+        <div class="pl-6"> 
+            <p class="text-xl font-bold">Follow Authors and Topics</p>
+            <p>Check out the latest from your preferred authors and on topics that matter to you.</p>
+        </div>
+    </li>
+    <li class="flex pt-8 ">
+        <i class="fa-regular fa-bell text-orange-300 text-[30px]"></i>
+        <div class="pl-6"> 
+            <p class="text-xl font-bold">Notifications and Alerts            </p>
+            <p>Remain ahead of the curve with timely notifications that update you on breaking developments and crucial news stories that shape our world.</p>
+        </div>
+    </li>
+</ul>
+</div>
+</div>
+
+        
+     </main>
+      
+
+
+     <footer class="text-black py-8 p-1 w-[1200px] mx-auto">
+       
+              <div class="container mx-auto px-4">
+            <div class=" justify-around flex gap-2 border-t-2 border-black pt-[30px]  ">
+                <div class="w-[150px]">
+                    <h2 class="text-lg font-bold mb-4">About</h2>
+                    <ul>
+                        <li><a href="#" class="hover:underline">About Us</a></li>
+                        <li><a href="#" class="hover:underline">Code of Ethics</a></li>
+                        <li><a href="#" class="hover:underline">Terms and Conditions</a></li>
+                        <li><a href="#" class="hover:underline">EU/EEA Regulatory Notice</a></li>
+                        <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:underline">Cookie Policy</a></li>
+                        <li><a href="#" class="hover:underline">Cookie Preferences</a></li>
+                        <li><a href="#" class="hover:underline">Sitemap</a></li>
+                        <li><a href="#" class="hover:underline">Work for us</a></li>
+                    </ul>
+                </div>
+                <div class="w-[150px]">
+                    <h2 class="text-lg font-bold mb-4">Connect</h2>
+                    <ul>
+                        <li><a href="#" class="hover:underline">Contact Us</a></li>
+                        <li><a href="#" class="hover:underline">User Accounts Help</a></li>
+                        <li><a href="#" class="hover:underline">Advertise with us</a></li>
+                        <li><a href="#" class="hover:underline">Apps</a></li>
+                        <li><a href="#" class="hover:underline">Newsletters</a></li>
+                        <li><a href="#" class="hover:underline">Channel Finder</a></li>
+                        <li><a href="#" class="hover:underline">TV Schedule</a></li>
+                        <li><a href="#" class="hover:underline">Podcasts</a></li>
+                        <li><a href="#" class="hover:underline">Submit a Tip</a></li>
+                    </ul>
+                </div>
+                <div class="w-[150px]">
+                    <h2 class="text-lg font-bold mb-4">Our Channels</h2>
+                    <ul>
+                        <li><a href="#" class="hover:underline">Al Jazeera Arabic</a></li>
+                        <li><a href="#" class="hover:underline">Al Jazeera English</a></li>
+                        <li><a href="#" class="hover:underline">Al Jazeera Investigative Unit</a></li>
+                        <li><a href="#" class="hover:underline">Al Jazeera Mubasher</a></li>
+                        <li><a href="#" class="hover:underline">Al Jazeera Documentary</a></li>
+                        <li><a href="#" class="hover:underline">Al Jazeera Balkans</a></li>
+                        <li><a href="#" class="hover:underline">AJ+</a></li>
+                    </ul>
+                </div>
+                <div class="w-[150px]">
+                    <h2 class="text-lg font-bold mb-4">Our Network</h2>
+                    <ul>
+                      
+                        <li><a href="#" class="hover:underline"> Al Jazeera Centre for Studies</a></li>
+                        <li><a href="#" class="hover:underline">Al Jazeera Media Institute</a></li>
+                        <li><a href="#" class="hover:underline">Learn Arabic</a></li>
+                        <li><a href="#" class="hover:underline">Al Jazeera Centre for Public Liberties & Human Rights  </a></li>
+                        <li><a href="#" class="hover:underline">Al Jazeera Forum</a></li>
+                        <li><a href="#" class="hover:underline">Al Jazeera Hotel Partners</a></li>
+
+                    </ul>
+                </div>
+
+
+
+                <div class="w-[210px]  text-center  flex-col m-0-auto justify-center   ">
+                    <p class="text-sm text-gray-400  p-4">Follow Al Jazeera English:</p>
+                    <ul class="flex justify-between p-4  ">
+                      
+                        <li><a href="https://www.facebook.com/aljazeera" class="mt-3 "> <img src="./img/facebook.png" alt=""></a></li>
+                        <li><a href="https://x.com/ajenglish" class="mt-3"><img src="./img/x.png" alt=""></a></li>
+                        <li><a href="https://www.youtube.com/aljazeeraenglish" class="mt-3"><img src="./img/youtube.png" alt=""></a></li>
+                        <li><a href="https://www.instagram.com/aljazeeraenglish/?hl=en" class="mt-3"><img src="./img/insta.png" alt="">  </a></li>
+                        <li><a href="https://www.aljazeera.com/xml/rss/all.xml" class="mt-3"><img src="./img/wifi.png" alt=""></a></li>
+
+                    </ul>
+                    <div class="w-full flex justify-center">
+            <img class="mt-3" src="./img/footer-jazzera.png" alt="Footer Al Jazeera">
+        </div>
+                    <p class=" p-4  text-sm mt-3">© 2024 Al Jazeera Media Network</p>
+                </div>
+
+            </div>
+           
+        </div>
+    </footer>
+         
+               
+
+
+</body>
+<script type="module" src="./js/index.js"></script>
+</html>

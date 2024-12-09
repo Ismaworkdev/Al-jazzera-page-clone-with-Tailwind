@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+    <title>Header con Tailwind CSS</title>
+</head>
+<body class="bg-black">
+  <header class=" bg-white text-black block p-4 z-10 fixed top-0 w-full shadow-xl h-[80px]">
+   
+        
+    <div class="container mx-auto flex justify-between w-[1200px]">
+       <a href="./index.html">
+        <img src="./img/aljazzera.png" alt="">
+       </a>
+        <nav class="mt-2 hidden lg:block">
+            <ul class="flex space-x-4">
+                <li><a href="#" class="hover:underline">News</a></li>
+                <li><a href="#" class="hover:underline">War on Gaza</a></li>
+                <li><a href="#" class="hover:underline">Trump 2.0</a></li>
+                <li><a href="#" class="hover:underline">Opinion</a></li>
+                <li><a href="#" class="hover:underline">Sport</a></li>
+                <li><a href="#" class="hover:underline">Video</a></li>
+                <li><a href="#" class="hover:underline">More </a></li>
+            </ul>
+        </nav>
+
+
+
+        <nav class="mt-2">
+            <ul class="flex space-x-4">
+               
+
+                <li><a href="./live.html" class="hover:underline"> <i class="fa-solid fa-circle-play"></i> LIVE</a></li>
+                <li><a id="buscar" class="hover:text-orange-500">   <i class="fas fa-search"></i> </a></li>
+                <li><a href="./singing.html" class=" rounded-[60px] p-3 text-white bg-black">Sign in </a></li>
+            </ul>
+        </nav>
+
+
+
+
+
+    <div id="seach" class=" w-[100%] flex items-center p-2 max-w mx-auto bg-gray-300 fixed top-[80px] left-0 justify-center">
+        <form class="flex w-full max-w-[1000px] items-center border  overflow-hidden justify-center">
+            <i class="fas fa-search p-2 bg-transparent"></i> 
+            <input  type="text" class="flex-grow p-2 border-none focus:outline-none bg-transparent" placeholder="Search...">
+            <button type="submit" class="bg-gray-500 text-white p-2  rounded-[0px]">Search </button>
+        </form>
+    </div>
+
+
+
+
+</header>
+
+   
+    
+    <main class=" relative  top-[90px] mb-[70px] container mx-auto flex justify-between w-[1200px] text-white">
+<div>
+    <h1 class="text-[30px]"> Al Jazzera Live </h1>
+    <iframe width="760" height="515" src="https://www.youtube.com/embed/gCNeDWCI0vo?si=Sc78XULpfjBpxiFu&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<div class="flex  border-b-2 border-white w-[1200px]">
+    <ul class="pt-3">
+        <li class="flex align-middle  pt-2"><i class="fa-solid fa-circle text-red-600"></i> <p class="pl-3">Now Playing: </p></li>
+        <li class="flex align-middle pt-9 pb-4"><p>Coming up Next : </p></li>
+        </ul>
+        <ul class="pt-3 pl-6  ">
+            <li><p class="text-[30px] font-bold">   The Stream : Rethinking the UN - Reform or Obsolescence?</p></li>
+            <li><p class="text-[25px]  pt-4"> NEWS 30min </p></li>
+         </ul>
+</div>
+
+<div class="block w-[1190px] overflow-hidden">
+    <p class="text-white w-[200px] text-[25px] mt-4 border-l-4 border-orange-300 pl-1 mb-2">
+      Latest Episodes
+    </p>
+  
+    <button 
+    id="left" 
+    class="relative top-[130px] left-2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full z-10">
+    <i class="fa-solid fa-arrow-left"></i>
+  </button>
+     
+      <button 
+      id="right" 
+      class="relative top-[130px] left-[1100px] right-2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full z-10">
+      <i class="fa-solid fa-arrow-right"></i>
+    </button>
+
+    <div  id="slider"  class="flex relative gap-3 transition-all duration-300 left-0">
+      <div class="bg-gray-800 w-[250px] shrink-0">
+        <img class="w-[250px]" src="./img/card1.png" alt="">
+        <p class="p-2">Russian Foreign Minister Sergey Lavrov discusses Syria crisis, Ukraine war</p>
+      </div>
+      <div class="bg-gray-800 w-[250px] shrink-0">
+        <img class="w-[250px]" src="./img/card2.png" alt="">
+        <p class="p-2">Israel’s war on Gaza – Fatima Bhutto and Dominique de Villepin</p>
+      </div>
+      <div class="bg-gray-800 w-[250px] shrink-0">
+        <img class="w-[250px]" src="./img/card3.png" alt="">
+        <p class="p-2">Pakistan protests & the state’s battle for control</p>
+      </div>
+      <div class="bg-gray-800 w-[250px] shrink-0">
+        <img class="w-[250px]" src="./img/card4.png" alt="">
+        <p class="p-2">There’s a biodiversity crisis and our food system is driving it | All Hail</p>
+      </div>
+      <div class="bg-gray-800 w-[250px] shrink-0">
+        <img class="w-[250px]" src="./img/card5.png" alt="">
+        <p class="p-2">Climate Justice, Indigenous rights, and the settler-colonial mindset</p>
+      </div>
+      <div class="bg-gray-800 w-[250px] shrink-0">
+        <img class="w-[250px]" src="./img/card6.png" alt="">
+        <p class="p-2">Greta Thunberg on Gaza: “This has shown the true colours of the world”</p>
+      </div>
+      <div class="bg-gray-800 w-[250px] shrink-0">
+        <img class="w-[250px]" src="./img/card7.png" alt="">
+        <p class="p-2">What might four more years of Donald Trump look like?</p>
+      </div>
+      <div class="bg-gray-800 w-[250px] shrink-0">
+        <img class="w-[250px]" src="./img/card8.png" alt="">
+        <p class="p-2">Israel wants to continue war on Gaza, but to what end?</p>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="w-[1200px] block pt-5 pl-2 ">
+<div class="flex justify-around border-b-2 border-white">
+<div>
+  <p>From : Start Here </p>
+  <p class="text-[30px] hover:underline font-bold"> Iran’s Axis of Resistance explained | Start Here</p>
+  <p class="text-[20px]">What is the Axis of Resistance and can Iran still rely on it?</p>
+  <p>11:50 11 Nov 2024 </p>
+</div>
+  <img class="w-[550px]" src="./img/vid1.png" alt="">
+</div>
+
+<div class="flex justify-around border-b-2 border-white">
+  <div>
+    <p>
+      From: NewsFeed </p>
+    <p class="text-[30px] hover:underline font-bold"> Legal cases against Donald Trump dismissed</p>
+    <p class="text-[20px]">US President-elect Donald Trump had two criminal cases against him abandoned. </p>
+    <p>11:50 11 Nov 2024 </p>
+  </div>
+    <img class="w-[550px]" src="./img/vid2.png" alt="">
+  </div>
+  <div class="flex justify-around border-b-2 border-white">
+    <div>
+      <p>
+        From: The Stream </p>
+      <p class="text-[30px] hover:underline font-bold"> War on women: Sexual violence in Sudan
+      </p>
+      <p class="text-[20px]"> We take a closer look at how the conflict in Sudan is impacting women.</p>
+      <p>11:50 11 Nov 2024 </p>
+    </div>
+      <img class="w-[550px]" src="./img/vid3.png" alt="">
+    </div>
+
+    <div class="flex justify-around border-b-2 border-white">
+      <div>
+        <p>From : Start Here </p>
+        <p class="text-[30px] hover:underline font-bold"> Mexico’s migrant crackdown | Start Here
+        </p>
+        <p class="text-[20px]">How Mexico is cracking down on migrants trying to reach the US border.</p>
+        <p>21:46 5 Nov  2024 </p>
+
+      </div>
+        <img class="w-[550px]" src="./img/vid4.png" alt="">
+      </div>
+
+      <div class="flex justify-around border-b-2 border-white">
+        <div>
+          <p>From: NewsFeed</p>
+          <p class="text-[30px] hover:underline font-bold"> Video: Israeli finance minister says it is ‘necessary to occupy Gaza’
+          </p>
+          <p class="text-[20px]">
+
+            Israel’s finance minister Bezalel Smotrich told a settler lobbying group that it is “necessary to occupy the Gaza Strip,”.
+          </p>
+          <p>21:46 5 Nov  2024 </p>
+  
+        </div>
+          <img class="w-[550px]" src="./img/vid5.png" alt="">
+        </div>
+
+        <div class="flex justify-around border-b-2 border-white">
+          <div>
+            <p>
+              From: NewsFeed</p>
+            <p class="text-[30px] hover:underline font-bold"> Video: Israeli finance minister says it is ‘necessary to occupy Gaza’
+            </p>
+            <p class="text-[20px]">
+  
+              The director of north Gaza’s Kamal Adwan Hospital has filmed patients fleeing from the hospital’s top floors as it was pounded by Israel’s military. 
+            </p>
+            <p>21:46 5 Nov  2024 </p>
+    
+          </div>
+            <img class="w-[550px]" src="./img/vid6.png" alt="">
+          </div>
+
+
+
+</div>
+
+<div class="block w-[1190px] overflow-hidden">
+  <p class="text-white w-[200px] text-[25px] mt-4 border-l-4 border-orange-300 pl-1 mb-2">
+    Featured Shows
+  </p>
+
+  <button 
+  id="left1" 
+  class="relative top-[190px] left-2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full z-10">
+  <i class="fa-solid fa-arrow-left"></i>
+</button>
+   
+    <button 
+    id="right1" 
+    class="relative top-[190px] left-[1100px] right-2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full z-10">
+    <i class="fa-solid fa-arrow-right"></i>
+  </button>
+
+  <div  id="slider1"  class="flex relative gap-3 transition-all duration-300 left-0">
+    
+      <img class="h-[350px] hover:bg-gray-500 hover:blur-sm " src="./img/sli1.png" alt="">
+      <img class="h-[350px] hover:bg-gray-500 hover:blur-sm" src="./img/sli2.png " alt="">
+
+      <img class="h-[350px] hover:bg-gray-500 hover:blur-sm" src="./img/sli3.png" alt="">
+
+      <img class="h-[350px] hover:bg-gray-500 hover:blur-sm" src="./img/sli4.png" alt="">
+
+      <img class="h-[350px] hover:bg-gray-500 hover:blur-sm" src="./img/sli5.png" alt="">
+      <img class="h-[350px] hover:bg-gray-500 hover:blur-sm " src="./img/sli6.png" alt="">
+      <img class="h-[350px] hover:bg-gray-500 hover:blur-sm " src="./img/sli7.png" alt="">
+      <img class="h-[350px] hover:bg-gray-500 hover:blur-sm " src="./img/sli8.png" alt="">
+
+
+    
+   
+  </div>
+</div>
+
+
+
+<div class="flex justify-center items-center "> 
+  <button class="bg-white text-black p-4 pl-20 pr-20 m-10">Show more</button> 
+</div>
+
+
+</div>
+
+  
+
+        
+     </main>
+
+      
+
+
+     <footer class="text-black py-8 p-1 w-[1200px] mx-auto">
+       
+              <div class="container mx-auto px-4">
+            <div class=" justify-around flex gap-2 border-t-2 border-white pt-[30px] ">
+                <div class="w-[150px]">
+                    <h2 class="text-lg font-bold mb-4 text-white">About</h2>
+                    <ul>
+                        <li><a href="#" class="text-white hover:underline">About Us</a></li>
+                        <li><a href="#" class=" text-white hover:underline">Code of Ethics</a></li>
+                        <li><a href="#" class="text-white hover:underline">Terms and Conditions</a></li>
+                        <li><a href="#" class=" text-white hover:underline">EU/EEA Regulatory Notice</a></li>
+                        <li><a href="#" class="text-white hover:underline">Privacy Policy</a></li>
+                        <li><a href="#" class="text-white hover:underline">Cookie Policy</a></li>
+                        <li><a href="#" class="text-white  hover:underline">Cookie Preferences</a></li>
+                        <li><a href="#" class=" text-white hover:underline">Sitemap</a></li>
+                        <li><a href="#" class=" text-white hover:underline">Work for us</a></li>
+                    </ul>
+                </div>
+                <div class="w-[150px]">
+                    <h2 class="text-lg font-bold mb-4 text-white ">Connect</h2>
+                    <ul>
+                        <li><a href="#" class=" text-white hover:underline">Contact Us</a></li>
+                        <li><a href="#" class="text-white hover:underline">User Accounts Help</a></li>
+                        <li><a href="#" class="text-white hover:underline">Advertise with us</a></li>
+                        <li><a href="#" class="text-white hover:underline">Apps</a></li>
+                        <li><a href="#" class="text-white hover:underline">Newsletters</a></li>
+                        <li><a href="#" class="text-white hover:underline">Channel Finder</a></li>
+                        <li><a href="#" class="text-white hover:underline">TV Schedule</a></li>
+                        <li><a href="#" class="text-white hover:underline">Podcasts</a></li>
+                        <li><a href="#" class="text-white hover:underline">Submit a Tip</a></li>
+                    </ul>
+                </div>
+                <div class="w-[150px]">
+                    <h2 class="text-lg font-bold mb-4 text-white ">Our Channels</h2>
+                    <ul>
+                        <li><a href="#" class="text-white hover:underline">Al Jazeera Arabic</a></li>
+                        <li><a href="#" class="text-white hover:underline">Al Jazeera English</a></li>
+                        <li><a href="#" class="text-white hover:underline">Al Jazeera Investigative Unit</a></li>
+                        <li><a href="#" class="text-white hover:underline">Al Jazeera Mubasher</a></li>
+                        <li><a href="#" class="text-white hover:underline">Al Jazeera Documentary</a></li>
+                        <li><a href="#" class="text-white hover:underline">Al Jazeera Balkans</a></li>
+                        <li><a href="#" class="text-white hover:underline">AJ+</a></li>
+                    </ul>
+                </div>
+                <div class="w-[150px]">
+                    <h2 class="text-lg font-bold mb-4 text-white">Our Network</h2>
+                    <ul>
+                      
+                        <li><a href="#" class="text-white hover:underline"> Al Jazeera Centre for Studies</a></li>
+                        <li><a href="#" class="text-white hover:underline">Al Jazeera Media Institute</a></li>
+                        <li><a href="#" class="text-white hover:underline">Learn Arabic</a></li>
+                        <li><a href="#" class="text-white hover:underline">Al Jazeera Centre for Public Liberties & Human Rights  </a></li>
+                        <li><a href="#" class="text-white hover:underline">Al Jazeera Forum</a></li>
+                        <li><a href="#" class="text-white hover:underline">Al Jazeera Hotel Partners</a></li>
+
+                    </ul>
+                </div>
+
+
+
+                <div class="w-[210px]  text-center  flex-col m-0-auto justify-center   ">
+                    <p class="text-sm   p-4 text-white ">Follow Al Jazeera English:</p>
+                    <ul class="flex justify-between p-4  ">
+                      
+                        <li><a href="https://www.facebook.com/aljazeera" class="mt-3 "> <img src="./img/f-black.png" alt=""></a></li>
+                        <li><a href="https://x.com/ajenglish" class="mt-3"><img src="./img/x-black.png" alt=""></a></li>
+                        <li><a href="https://www.youtube.com/aljazeeraenglish" class="mt-3"><img src="./img/y-black.png" alt=""></a></li>
+                        <li><a href="https://www.instagram.com/aljazeeraenglish/?hl=en" class="mt-3"><img src="./img/i-black.png" alt="">  </a></li>
+                        <li><a href="https://www.aljazeera.com/xml/rss/all.xml" class="mt-3"><img src="./img/all-black.png" alt=""></a></li>
+
+                    </ul>
+                    <div class="w-full flex justify-center">
+            <img class="mt-3" src="./img/aj-logo.svg" alt="Footer Al Jazeera">
+        </div>
+                    <p class=" p-4  text-sm mt-3 text-white ">© 2024 Al Jazeera Media Network</p>
+                </div>
+
+            </div>
+           
+        </div>
+    </footer>
+         
+               
+
+    <script type="module" src="./js/slider.js"></script>
+    <script type="module" src="./js/index.js"></script>
+</body>
+
+
+</html>
